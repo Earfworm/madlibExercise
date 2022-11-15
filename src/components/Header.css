@@ -1,0 +1,25 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a89d;
+  box-shadow: 2px 2px 4px 10px rgb(0 0 0 / 20%);
+}
+.Header a {
+  text-decoration: none;
+  color: black;
+}
+
+.Header h1 {
+  color: black;
+}
+
+.Header nav {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  color: black;
+}
