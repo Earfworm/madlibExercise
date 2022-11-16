@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import StoriesContext from "../context/StoriesContext";
 
 import "./ViewStoryRoute.css";
@@ -10,7 +10,11 @@ const ViewStoryRoute = () => {
   const findStory = stories.find((story) => {
     return story.id === +id!;
   });
-
+  const navigate = useNavigate();
+  if (findStory === undefined) {
+    //navigate("/stories");
+    return <Navigate to={"/stories"} />;
+  }
   return (
     <div className="ViewStoryRoute">
       <h2>Mad Lib By: {findStory?.author}</h2>
