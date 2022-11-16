@@ -58,7 +58,7 @@ const CreateStoryRoute = () => {
       <input
         type="text"
         name="person"
-        id="place"
+        id="person"
         value={inputPerson}
         onChange={(e) => {
           setInputPerson(e.target.value);

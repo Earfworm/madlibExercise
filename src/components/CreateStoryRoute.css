@@ -1,0 +1,19 @@
+.CreateStoryRoute {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+}
+.CreateStoryRoute input {
+  margin: 5px;
+}
+
+.CreateStoryRoute button {
+  margin-top: 5px;
+  background-color: #f59d99;
+  border: none;
+  width: 169px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
