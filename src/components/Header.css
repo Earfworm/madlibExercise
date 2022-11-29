@@ -7,6 +7,17 @@
 
   box-shadow: 2px 2px 4px 10px rgb(0 0 0 / 20%);
 }
+
+#logo {
+  width: 100px;
+  padding-top: 10px;
+  transition: width 1s ease-in 2s;
+}
+
+#logo:hover {
+  width: 150px;
+}
+
 .Header a {
   text-decoration: none;
   color: black;
@@ -23,4 +34,19 @@
   justify-content: space-evenly;
   padding-bottom: 20px;
   color: black;
+}
+
+.Header .saved-stories {
+  transition: letter-spacing 1s ease-out 2s;
+}
+.Header .saved-stories:hover {
+  letter-spacing: 3px;
+}
+
+.Header .create-story {
+  transition: letter-spacing 1s ease-out 2s;
+}
+
+.Header .create-story:hover {
+  letter-spacing: 3px;
 }

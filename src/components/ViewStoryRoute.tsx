@@ -19,7 +19,7 @@ const ViewStoryRoute = () => {
     <div className="ViewStoryRoute">
       <h2>Mad Lib By: {findStory?.author}</h2>
       <p>
-        I was in {findStory?.word1} with {findStory?.word2} and I to{" "}
+        I was in {findStory?.word1} with {findStory?.word2} and I had to{" "}
         {findStory?.word3} as a {findStory?.word4} {findStory?.word5} word to{" "}
         {findStory?.word6}
       </p>
