@@ -1,0 +1,23 @@
+.ListStoriesRoute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.ListStoriesRoute ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.ListStoriesRoute ul a {
+  font-size: 24px;
+  display: flex;
+  margin-right: 60px;
+  text-decoration: none;
+  color: black;
+}
