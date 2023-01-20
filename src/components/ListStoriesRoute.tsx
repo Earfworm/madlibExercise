@@ -1,10 +1,17 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import StoriesContext from "../context/StoriesContext";
+import Madlibs from "../models/Madlibs";
+import { newMadlib } from "../Services/MadlibServices";
 import "./ListStoriesRoute.css";
 
 const ListStoriesRoute = () => {
   const { stories } = useContext(StoriesContext);
+  const [savedStories, setSavedStories] = useState<Madlibs>();
+  // useEffect(() => {
+  //   newMadlib().then((res) => setSavedStories(res))
+  // })
+  console.log(stories);
   return (
     <div className="ListStoriesRoute">
       <h2>Pick a story</h2>
